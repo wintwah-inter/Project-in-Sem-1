@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Shop</title>
+
+<script src="jQuery.js"></script>
+
+<style>
+body{
+    font-family: Arial;
+}
+
+.mmn{text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;}
+
+.product{
+    border:1px solid brown;
+    background-color: rgb(225, 202, 202);
+    border-radius: 25px;
+    width:200px;
+    height: 100px;
+    padding:10px;
+    margin:10px;
+    display:inline-block;
+    text-align:center;
+}
+
+.cart{
+    border:1px solid brown;
+    background-color: rgb(225, 202, 202);
+    border-radius: 25px;
+    width:250px;
+    padding:10px;
+    margin-top:20px;
+}
+
+.menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            background: gray;
+            color: white;
+            border-radius: 5px;
+        }
+        #menu-links {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            width: 200px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: none; 
+        }
+
+        #menu-links li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menu-links li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 12px;
+        }
+
+        #menu-links li a:hover {
+            background-color: #ddd;
+        }
+        .show {
+            display: block !important;
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+<ul id="menu-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="man.html">Man Wears</a></li>
+        <li><a href="woman.html">Woman wears</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu-links");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+
+<h2 class="mmn">CV Clothing Shop</h2>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Mouse $25 <br><br>
+    <button class="add" data-name="Mouse" data-price="25">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Monitor $199 <br><br>
+    <button class="add" data-name="Monitor" data-price="199">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+<div class="product">
+    Keyboard $85 <br><br>
+    <button class="add" data-name="Keyboard" data-price="85">Add</button>
+</div>
+
+
+<div class="cart">
+    <h3>Cart</h3>
+    <div id="cart">Empty</div>
+    <p>Total: $<span id="total">0</span></p>
+    <button id="order">Place Order</button>
+    <button id="clear">Clear Cart</button>
+</div>
+
+
+
+<script>
+let total = 0;
+
+$(".add").click(function(){
+    let name = $(this).data("name");
+    let price = $(this).data("price");
+
+    if($("#cart").text() == "Empty"){
+        $("#cart").text("");
+    }
+
+    $("#cart").append(name + " $" + price + "<br>");
+
+    total = total + price;
+    $("#total").text(total);
+});
+
+$("#clear").click(function(){
+    $("#cart").text("Empty");
+    total = 0;
+    $("#total").text(total);
+});
+
+$("#order").click(function(){
+    if(total == 0){
+        alert("Cart is empty!");
+    }else{
+        alert("Order placed! Total = $" + total);
+        $("#cart").text("Empty");
+        total = 0;
+        $("#total").text(total);
+    }
+});
+</script>
+
+</body>
+</html>

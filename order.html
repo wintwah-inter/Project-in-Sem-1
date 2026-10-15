@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Quick Shop</title>
+
+<script src="jQuery.js"></script>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    display:flex;
+    padding:20px;
+}
+
+.products{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:160px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+.card h4{
+    margin:10px 0;
+}
+
+.price{
+    color:green;
+    font-weight:bold;
+}
+
+button{
+    padding:6px 12px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.cart{
+    margin-left:40px;
+    width:300px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+.cart h3{
+    margin-top:0;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+}
+
+.total{
+    font-weight:bold;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Simple Quick Shop</h2>
+
+<div class="container">
+
+    <div class="products">
+        <div class="card">
+            <h4>Wireless Mouse</h4>
+            <p class="price">$25</p>
+            <button class="add" data-name="Wireless Mouse" data-price="25">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h4>Mechanical Keyboard</h4>
+            <p class="price">$85</p>
+            <button class="add" data-name="Mechanical Keyboard" data-price="85">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h4>Gaming Monitor</h4>
+            <p class="price">$199</p>
+            <button class="add" data-name="Gaming Monitor" data-price="199">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h4>USB-C Cable</h4>
+            <p class="price">$12</p>
+            <button class="add" data-name="USB-C Cable" data-price="12">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h4>Headphones</h4>
+            <p class="price">$50</p>
+            <button class="add" data-name="Headphones" data-price="50">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h3>🛒 Your Cart</h3>
+        <div id="cart-items">Cart is empty.</div>
+        <div class="total">Total: $<span id="total">0</span></div>
+        <br>
+        <button id="clear">Place</button>
+        <button id="clear">Empty Cart</button>
+    </div>
+
+</div>
+
+<script>
+let total = 0;
+
+$(".add").click(function(){
+    let name = $(this).data("name");
+    let price = parseInt($(this).data("price"));
+
+    if($("#cart-items").text() == "Cart is empty."){
+        $("#cart-items").html("");
+    }
+
+    $("#cart-items").append(
+        "<div class='cart-item'><span>"+name+"</span><span>$"+price+"</span></div>"
+    );
+
+    total += price;
+    $("#total").text(total);
+});
+
+$("#clear").click(function(){
+    $("#cart-items").html("Cart is empty.");
+    total = 0;
+    $("#total").text(total);
+});
+</script>
+
+</body>
+</html>
