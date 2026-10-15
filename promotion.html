@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing Project - Global Discount</title>
+    <script src="jQuery/jQuery.js"></script>
+    
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4;text-align:center;  }
+        .product-container { display: flex; gap: 31px; margin-top: 20px;flex-wrap:wrap; }
+        .clothing-card { background: rgb(233, 191, 191); padding: 19px; border-radius: 8px; width: 150px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        .price { font-weight: bold; color: #333; font-size: 1.2em; }
+        .discount-btn { background: #e74c3c; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 16px; margin-bottom: 20px; }
+        .promo-msg { display: none; color: #27ae60; font-weight: bold; margin-top: 10px; }
+
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            background: gray;
+            color: white;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-right: auto;
+            width:fit-content ;
+        }
+        #menu-links {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            width: 200px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: none; 
+        }
+
+        #menu-links li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menu-links li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 12px;
+        }
+
+        #menu-links li a:hover {
+            background-color: #ddd;
+        }
+        .show {
+            display: block !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+<ul id="menu-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="man.html">Man Wears</a></li>
+        <li><a href="woman.html">Woman wears</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="promotion.html">Promotion</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu-links");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+    <h1>CV's Style & Co. Seasonal Sale</h1>
+    
+    <button class="discount-btn" id="applyPromo">Apply 20% Discount to All</button>
+    <div id="promo-msg" class="promo-msg">All prices have been updated!</div>
+
+    <div class="product-container">
+        <div class="clothing-card">
+            <h4>Burmese man wear</h4>
+            <p class="price">355000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Shan man wear</h4>
+            <p class="price">150000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Chin man wear</h4>
+            <p class="price">250000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Mon man wear</h4>
+            <p class="price">100000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Kayin man wear</h4>
+            <p class="price">100000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Kachin man wear</h4>
+            <p class="price">350000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Kayin woman wear</h4>
+            <p class="price">100000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Mon woman wear</h4>
+            <p class="price">150000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Shan woman wear</h4>
+            <p class="price">200000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Kachin woman wear</h4>
+            <p class="price">500000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Chin woman wear</h4>
+            <p class="price">500000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Burmese woman wear</h4>
+            <p class="price">100000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Traditional Headband</h4>
+            <p class="price">15000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Floral Hair Comp</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Decorative mini fan</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Hair Stick(hairpin)</h4>
+            <p class="price">15000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Step Sake(buyao)</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Materials</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Pathein Parasol</h4>
+            <p class="price">15000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Swan Oak</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        <div class="clothing-card">
+            <h4>Shan Golden Belt</h4>
+            <p class="price">18000 MMK</p>
+        </div>
+        
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            
+            $("#applyPromo").click(function() {
+                $(".price").each(function() {
+                    let oldPrice = parseFloat($(this).text().replace('MMK', ''));
+                    let newPrice = oldPrice * 0.8; 
+                    $(this).fadeOut(500, function() {
+                        $(this).text(newPrice.toFixed(2)+"MMK");
+                        $(this).css("color", "#e74c3c");
+                        $(this).fadeIn(500);
+                    });
+                });
+                $("#promo-msg").slideDown(1000);
+                $(this).prop("disabled", true).text("Discount Applied");
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <script src="jQuery/jQuery.js"></script>
+
+    <style>
+      .section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .vision-box {
+            background: #f4f7f6;
+            border-left: 5px solid #a27b5c;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        ul li strong {
+            color: #a27b5c;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            box-shadow: 0 4px 15px rgb(86, 7, 7);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgb(90, 11, 11);
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th { display: none; }
+            td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: bold;
+            }}
+            header{
+  display:flex;
+  align-items:center;
+  padding:15px 40px;
+  background:#fff;
+}
+
+a {
+  margin-right:20px;
+  text-decoration: none;
+  color:black;
+  font-weight:70;
+}
+footer {
+            margin-top: 60px;
+            padding: 20px;
+            border: 1.5px solid #000;
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+            
+    </style>
+  </head>
+  <body>
+
+  <nav>
+    <a href="homepage.html">Home Page</a>
+    <a href="Man.html">Man wear</a>
+    <a href="Woman.html">Woman wear</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="promotion.html">Promotion</a>
+    <a href="about us.html">About Us</a>
+    <a href="Contact Us.html">Contact Us</a>
+  </nav>
+
+    <h2>CV's Contact Us</h2>
+
+  <legend>Customer Information</legend><br>
+  <fieldset>
+  <label>First Name:<br><input type="text"
+   name="fname" id="fname" required></lable><br><br> 
+
+  <label>Last Name:<br><input type="text" 
+  name="Iname"id="Iname"></label><br><br>
+
+  <label>Email:<br><input type="text" name="email" id="email" required></label><br><br> 
+  <form onsubmit="alert('Submission complete');">
+  <input type="Submit" value="Submit">
+  </form>
+  </fieldset>
+
+<footer>
+  <section class="section">
+        <h2>Contact Our Team</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Ph Number</th>
+                    <th>Email Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Name">Bhone Htet Naing</td>
+                    <td data-label="Ph Number">09 690 588 258</td>
+                    <td data-label="Email Address">bhonehtet728@gmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Wint Wah Nyi Nyi</td>
+                    <td data-label="Ph Number">09 786 557 450</td>
+                    <td data-label="Email Address">wintwahaura@gmail.com</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Chit Su Wai</td>
+                    <td data-label="Ph Number">09 761 612 187</td>
+                    <td data-label="Email Address">chitsuwai0989@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</footer>
+    <footer>
+        Copyright &copy;2026 CV Clothing Shop<br>
+        Location-NSPU
+    </footer>
+
+  </body>
+</html>

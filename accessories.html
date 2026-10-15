@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories- Latest Collection</title>
+    <script src="jQuery/jQuery.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Serif', 'Palatino', 'Georgia', serif;
+            background-color: #fdfdfd;
+            color: black;
+        }
+
+        /* Header Layout */
+        header {
+            background-color: rgb(224, 141, 141);
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            min-height: 180px;
+            color: bisque;        }
+
+        /* Top Corner Navigation */
+        .nav-link {
+            text-decoration: underline;
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Center Branding */
+        .branding {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .main-title {
+            font-size: 5rem;
+            color: black;
+            margin: 0;
+            /* The Reflection Effect */
+            -webkit-box-reflect: below -25px linear-gradient(transparent, rgba(255,255,255,0.3));
+        }
+
+        .subtitle {
+            font-style: italic;
+            margin-top: 45px;
+            font-size: 1.2rem;
+            font-family: 'Brush Script MT', cursive, serif;
+        }
+
+        .sales-tag {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-family: 'Impact', sans-serif;
+        }
+
+        /* Section Heading */
+        .category-header {
+            padding: 30px 50px 10px 50px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /* Product Grid (3 Columns) */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px 40px;
+            padding: 40px 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background-color: #eee;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 25px;
+        }
+
+        .product-price {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .product-size {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+         footer {
+            margin-top: 60px;
+            padding: 20px;
+            border: 1.5px solid #000;
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+         nav {
+            width: 200px;
+            border-right: 2px solid #000;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: underline;
+            color: #000;
+            font-size: 1.2rem;
+            padding-left: 15px;
+        }
+
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            background:gray;
+            color: white;
+            border-radius: 5px;
+        }
+        #menu-links {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            width: 200px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: none; 
+        }
+
+        #menu-links li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menu-links li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 12px;
+        }
+
+        #menu-links li a:hover {
+            background-color: #ddd;
+        }
+        .show {
+            display: block !important;
+        }
+         body{
+    font-family: Arial;
+}
+
+.mmn{text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;}
+
+
+
+.cart{
+    border:1px solid brown;
+    background-color: rgb(225, 202, 202);
+    border-radius: 25px;
+    width:250px;
+    padding:10px;
+    margin-top:20px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+         <div class="menu-icon" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+
+    <ul id="menu-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="man.html">Man Wears</a></li>
+        <li><a href="woman.html">Woman wears</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="promotion.html">Promotion</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu-links");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+        <div class="branding">
+            <h1 class="main-title">CV's Accessories</h1>
+            <p class="subtitle">Design For Youu</p>
+        </div>
+        
+        <div class="sales-tag">Sales Upcoming</div>
+    </header>
+
+    <div class="category-header">
+        Myanmar Traditional Accessories
+    </div>
+
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="mmm.jpg" class="product-image">
+            <div class="product-price">15000 MMK</div>
+            <div class="product-size">Pathein Parasol</div>
+            <div class="product"><br>
+    <button class="add"data-price="15000">Add</button>
+</div>
+        </div>
+
+        <div class="product-card">
+            <img src="mmm1.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Swan Oak</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+        <div class="product-card">
+            <img src="mmm2.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Shan Golden Belt</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+    </main>
+
+    <div class="category-header">
+        Vietnam Traditional Accessories
+    </div>
+
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="vvv.jpg" class="product-image">
+            <div class="product-price">15000 MMK</div>
+            <div class="product-size">Traditional Headband</div>
+            <div class="product"><br>
+    <button class="add"data-price="15000">Add</button>
+</div>
+        </div>
+
+        <div class="product-card">
+            <img src="vvv1.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Floral Hair Comb</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+        <div class="product-card">
+            <img src="vvv2.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Decorative mini fan</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+    </main>
+
+    <div class="category-header">
+        Chinese Traditional Accessories
+    </div>
+
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="ccc.jpg" class="product-image">
+            <div class="product-price">15000 MMK</div>
+            <div class="product-size">Hair Stick(hairpin)</div>
+            <div class="product"><br>
+    <button class="add"data-price="15000">Add</button>
+</div>
+        </div>
+
+        <div class="product-card">
+            <img src="ccc1.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Step Sake(buyao)</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+        <div class="product-card">
+            <img src="ccc2.jpg" class="product-image">
+            <div class="product-price">18000 MMK</div>
+            <div class="product-size">Materials</div>
+            <div class="product"><br>
+    <button class="add"data-price="18000">Add</button>
+</div>
+        </div>
+    </main>
+    <div class="cart">
+    <h3>Cart</h3>
+    <div id="cart">Empty</div>
+    <p>Total:<span id="total">0</span></p>
+    <button id="order">Place Order</button>
+    <button id="clear">Clear Cart</button>
+</div>
+
+<script>
+  let total = 0;
+
+  $(".add").click(function() {
+    let price = Number($(this).data("price"));
+
+    if ($("#cart").text() == "Empty") {
+      $("#cart").text("");
+    }
+
+    // Changed "$" to " MMK"
+    $("#cart").append(price + " MMK" + "<br>");
+
+    total = total + price;
+    $("#total").text(total + " MMK");
+  });
+
+  $("#clear").click(function() {
+    $("#cart").text("Empty");
+    total = 0;
+    $("#total").text(total + " MMK");
+  });
+
+  $("#order").click(function() {
+    if (total == 0) {
+      alert("Cart is empty!");
+    } else {
+      alert("Order placed! Total = " + total + " MMK");
+      $("#cart").text("Empty");
+      total = 0;
+      $("#total").text(total + " MMK");
+    }
+  });
+</script>
+    <footer>
+        Copyright &copy;2026 CV Clothing Shop<br>
+        Location-NSPU
+    </footer>
+
+</body>
+</html>
