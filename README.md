@@ -1,2 +1,2 @@
-# Project-in-Sem-1
+# Online commercial shop website
 I have created this project in intention of creating a website for Online shop by using java script, HTML, JQUERY,etc....
