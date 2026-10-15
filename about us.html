@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Our Heritage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #fdfdfd;
+        }
+
+        h1{ background-color: rgb(224, 141, 141);
+            color: bisque;
+             width: 100%;
+             height: 200px;
+            text-align: center;
+            margin:0;
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;}
+
+         h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .vision-box {
+            background: #f4f7f6;
+            border-left: 5px solid #a27b5c;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        ul li strong {
+            color: #a27b5c;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th { display: none; }
+            td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+            }
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: bold;
+            }
+        }
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            background: gray;
+            color: white;
+            border-radius: 5px;
+        }
+        #menu-links {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            width: 200px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: none; 
+        }
+
+        #menu-links li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #menu-links li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 12px;
+        }
+
+        #menu-links li a:hover {
+            background-color: #ddd;
+        }
+        .show {
+            display: block !important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰ Menu
+    </div>
+<ul id="menu-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="man.html">Man Wears</a></li>
+        <li><a href="woman.html">Woman wears</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="promotion.html">Promotion</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu-links");
+            menu.classList.toggle("show");
+        }
+    </script>
+
+    <header>
+        <h1>CV's About Us</h1>
+    </header>
+
+    <section class="section">
+        <h2>Our Story</h2>
+        <p>     Founded in 2024 by three like-mined friends- Kai, Aylia, Chal.
+            We founded Traditional Costumes out of a shared love for our heritage.
+            Our journey is simple: we want to blend traditional craftsmanship  with modern style, making it posssible for everyone to wear our culture pride.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Our Vision</h2>
+        <div class="vision-box">
+            Traditional Costume aims to revive disappearing traditional costumes and showcase it to the world through modern and innovtive designs.
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Why Choose Us</h2>
+        <ul>
+            <li>
+                <strong>Authenticity</strong>
+                We conduct in-depth research on traditional design to ensure every piece is crafted is meticulous attention to its original heritages.
+            </li>
+            <li>
+                <strong>Quality First</strong>
+            From the selection of fabrics to the final stitch,every detail is thoroughly inspected before reaching  our customers.
+            </li>
+            <li>
+                <strong>Passion For Heritage</strong>
+                More than just a business, we are driven by a profound desire to preserve and protect our cultural legacy.
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
